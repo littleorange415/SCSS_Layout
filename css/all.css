@@ -1,0 +1,697 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.material-icons {
+  display: block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.f14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.f16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.f20 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.f24 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.f28 {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.f32 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.f40 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.pr16 {
+  padding-right: 16px;
+}
+
+.pt60 {
+  padding-top: 60px;
+}
+
+.pb60 {
+  padding-bottom: 60px;
+}
+
+.btn {
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 350px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 432px;
+}
+
+.header .nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8D8D8D;
+}
+
+.header .nav a:hover {
+  color: #916019;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 15%;
+  height: 870px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true") center center no-repeat;
+  background-size: cover;
+}
+
+.banner .bannerContent {
+  width: 445px;
+  color: #FFFFFF;
+}
+
+.container .intro li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .intro .introText {
+  width: 555px;
+  padding: 0 110px;
+}
+
+.container .intro .introText h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+.container .intro .introText p {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.container .intro .introText a {
+  color: #916019;
+}
+
+.container .intro .introText a:hover {
+  text-decoration: underline;
+}
+
+.container .intro .introText2 {
+  width: 555px;
+  padding: 0 110px;
+}
+
+.container .intro .introText2 h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.container .intro .introText2 p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.container .intro .introText2 .btnBlack {
+  border: 2px solid black;
+  color: black;
+  padding: 8px 0;
+}
+
+.container .intro .introText2 .btnBlack:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container .intro .introImg1 {
+  width: 555px;
+  padding: 277.5px 0px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index2.jpg");
+  background-size: cover;
+  background-position: 0px -30px;
+}
+
+.container .intro .introImg2 {
+  width: 555px;
+  padding: 277.5px 0px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index3.png?raw=true");
+  background-size: cover;
+}
+
+.container .intro .introImg3 {
+  width: 555px;
+  padding: 277.5px 0px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index4.jpg?raw=true");
+  background-size: cover;
+  background-position: -50px 0px;
+}
+
+.container .intro .introImg4 {
+  width: 555px;
+  padding: 540px 0px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index5.jpg?raw=true");
+  background-size: cover;
+  background-position: -100px 0px;
+}
+
+.container .intro2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .intro2 img {
+  width: 730px;
+}
+
+.container .intro2 .intro2Text {
+  width: 350px;
+}
+
+.container .intro2 .intro2Text h2 {
+  font-weight: bold;
+}
+
+.container .intro2 .intro2Text a {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #916019;
+  text-decoration: underline;
+}
+
+.hlItem {
+  background: #E0E0E0;
+}
+
+.hlItem .itemList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hlItem .itemList li {
+  margin: 40px 0;
+}
+
+.hlItem .itemList img {
+  width: 350px;
+  height: 540px;
+}
+
+.hlItem .itemList h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.hlItem .itemList h3 {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+.hlItem .itemList p {
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 8px;
+}
+
+.hlItem .itemList a:hover {
+  text-decoration: underline;
+}
+
+.hlItem .itemList del {
+  color: #8D8D8D;
+}
+
+.hlItem .itemList .soldImg {
+  width: 350px;
+  height: 540px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index8.jpg?raw=true");
+  background-size: cover;
+}
+
+.hlItem .itemList .soldImg .sold {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 540px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.subscribe {
+  height: 600px;
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  background-size: 135%;
+  background-position: -200px -515px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscribe .subContent {
+  margin: 10% 0 0 10%;
+}
+
+.subscribe .subContent h2 {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #8D8D8D;
+  margin-bottom: 20px;
+}
+
+.subscribe .subContent .subInsert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
+  height: 60px;
+  border: 2px solid #916000;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.subscribe .subContent .subInsert .typeEmail {
+  padding-left: 16px;
+}
+
+.subscribe .subContent .subInsert .send {
+  display: block;
+  background: #916019;
+  width: 131px;
+  height: 56px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+  background: #916019;
+}
+
+.footer .footerCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.footer .footerCon .footerCC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer .footerCon .footerCC p {
+  color: #FFFFFF;
+  padding-left: 16px;
+}
+
+.footer .footerCon .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footerCon .footerNav a {
+  color: #FFFFFF;
+  padding-left: 36px;
+}
+
+.navBar {
+  background: #916019;
+}
+
+.navBar .navBarList {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.navBar .navBarList .navBarListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.navBar .navBarList .navBarListItem a {
+  color: #FFFFFF;
+  padding: 14px 0;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products .productList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products .productList li {
+  margin-bottom: 60px;
+}
+
+.products .productList li img {
+  width: 255px;
+  height: 255px;
+}
+
+.products .productList li h2 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.products .productList li h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.products .productList li p {
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 8px;
+}
+
+.products .productList li a:hover {
+  text-decoration: underline;
+}
+
+.products .productList li del {
+  color: #8D8D8D;
+}
+
+.products .productList li .material-icons {
+  display: inline;
+  color: #916019;
+}
+
+.products .pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+}
+
+.products .pages li a {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.products .pages li a:hover {
+  color: #916019;
+  text-decoration: underline;
+}
+
+.products .pages .active {
+  color: #916019;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=all.css.map */

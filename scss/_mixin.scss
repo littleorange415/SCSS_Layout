@@ -1,0 +1,7 @@
+
+//flex物件靠左右
+@mixin flexLR {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}

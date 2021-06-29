@@ -1,0 +1,93 @@
+//font
+.bold{
+    font-weight: bold;
+}
+.f14{
+    font-size: 14px;
+    line-height:21px;
+}
+
+.f16{
+    font-size: 16px;
+    line-height:24px;
+}
+.f20{
+    font-size: 20px;
+    line-height:30px;
+}
+.f24{
+    font-size: 24px;
+    line-height:36px;
+}
+.f28{
+    font-size: 28px;
+    line-height:42px;
+}
+.f32{
+    font-size: 32px;
+    line-height:48px;
+}
+.f40{
+    font-size: 40px;
+    line-height:60px;
+}
+
+//margin
+.mb8{
+    margin-bottom: 8px;
+}
+.mb16{
+    margin-bottom:16px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.mb60{
+    margin-bottom: 60px;
+}
+.mt8{
+    margin-top: 8px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mt60{
+    margin-top: 60px;
+}
+
+.mt80{
+    margin-top: 80px;
+}
+
+
+//padding
+
+.pr16{
+    padding-right:16px;
+}
+.pt60{
+    padding-top: 60px;
+}
+.pb60{
+    padding-bottom: 60px;
+}
+
+
+//btn
+.btn{
+    border: 2px solid $antiColor;
+    border-radius: 30px;
+    text-align: center;
+    color:$antiColor;
+    width: 350px;
+}
+.btn:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+
+
+
+
+

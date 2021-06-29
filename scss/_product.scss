@@ -1,0 +1,73 @@
+//Product Page
+.navBar{
+    background: $primaryColor;
+    .navBarList{
+        max-width: $width;
+        margin: 0 auto;
+        .navBarListItem{
+            @include flexLR();
+            justify-content:space-between;
+            width: 550px;
+            a{
+                color:$antiColor;
+                padding: 14px 0;
+            }
+        }
+    }
+}
+.products{
+    @include flexLR();
+    flex-direction: column;
+        .productList{
+            @include flexLR();
+            flex-wrap: wrap;
+            li{
+                margin-bottom: 60px;
+            img{
+                width: 255px;
+                height:255px;
+            }
+            h2{
+                font-size: 24px;
+                line-height:36px;
+                font-weight: bold;
+            }
+            h3{
+                font-size: 16px;
+                line-height:24px;
+            }
+            p{
+                display: inline;
+                font-size: 16px;
+                line-height:24px;
+                padding-right: 8px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            del{
+                color: $secColor;
+            }
+            .material-icons{
+                display: inline;
+                color: $primaryColor;
+            }
+            }
+        }
+        .pages{
+            @include flexLR();
+            width:100px;
+            li a{
+                font-size: 20px;
+                line-height:30px;
+            }
+            li a:hover{
+                color: $primaryColor;
+                text-decoration: underline;
+            }
+            .active{
+                color: $primaryColor;
+                text-decoration: underline;
+            }
+        }
+}
